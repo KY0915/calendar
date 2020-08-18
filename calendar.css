@@ -1,0 +1,51 @@
+.card-header {
+  color: white;
+  background-color: #0ad4f8 !important;
+}
+
+table {
+  border: none !important;
+}
+
+#days {
+  width: calc(100% / 7);
+  text-align: center;
+}
+
+.date-row {
+  height: 3rem;
+  display: flex;
+  justify-items: start;
+  align-items: center;
+}
+
+.today-date {
+  background-color: rgb(89, 216, 255);
+}
+.selected-date {
+  background-color: rgb(89, 216, 255);
+}
+.dates:hover {
+  background-color: rgb(64, 204, 247);
+}
+
+#hours-container {
+  display: block;
+  margin-top: 300px;
+  height: 200px;
+}
+
+.hour-mark {
+  width: 2px;
+  display: block;
+  float: left;
+  height: 4px;
+  background: #0dad83;
+  position: relative;
+  margin-left: calc((100% / 12) - 2px);
+  transition: background 0.15s ease;
+}
+.hour-mark:nth-child(3n) {
+  height: 6px;
+  top: -1px;
+}
